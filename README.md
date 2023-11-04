@@ -1,6 +1,9 @@
 ## Principal Component Analysis
 In simple terms, the goal of PCA is to reduce dimensions or reduce the number of attributes in a dataset without reducing information. For example, in a dataset of house prices. In PCA, each attribute is called a principal component. If there are 10 attributes in the dataset, it means there are 10 principal components. In the image below there is a histogram of the 10 principal components and the variance of each principal component.
 
+![image](https://github.com/diantyapitaloka/Principal-Analysis/assets/147487436/1729ddb9-bb3c-45ac-b526-5c6048b1a30a)
+
+
 ## Principal Component Analysis Coding
 Import the required libraries. Then we input the iris dataset and divide the data into train set and test set.
 
