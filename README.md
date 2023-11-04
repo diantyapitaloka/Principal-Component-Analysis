@@ -52,10 +52,9 @@ PCA with 2 principal components.
 - X_test_pca = pca.fit_transform(X_test)
 
 ## Accuracy of The Classifier
-We will test the accuracy of the classifier after using PCA.
-Classifier accuracy test.
-model2 = decision_tree.fit(X_train_pca, y_train)
-model2.score(X_test_pca, y_test)
+We will test the accuracy of the classifier after using PCA. Classifier accuracy test.
+- model2 = decision_tree.fit(X_train_pca, y_train)
+- model2.score(X_test_pca, y_test)
 
 ## Final Look Principal Component Analysis Testing
 The results of accuracy testing after using PCA are as below.
