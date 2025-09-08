@@ -82,4 +82,7 @@ model2.score(X_test_pca, y_test)
 The results of accuracy testing after using PCA are as below.
 ![image](https://github.com/diantyapitaloka/Principal-Analysis/assets/147487436/ffdc24f9-15e6-4bc1-9665-7e13041b1a0a)
 
+## 🍘🍜🍣 License 🍣🍜🍘
+- Copyright by Diantya Pitaloka
+
 
