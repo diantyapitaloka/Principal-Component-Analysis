@@ -1,6 +1,7 @@
 ## 🍘🍜🍣 Principal Component Analysis 🍣🍜🍘
 - In simple terms, the goal of PCA is to reduce dimensions or reduce the number of attributes in a dataset without reducing information. For example, in a dataset of house prices. In PCA, each attribute is called a principal component. If there are 10 attributes in the dataset, it means there are 10 principal components. In the image below there is a histogram of the 10 principal components and the variance of each principal component.
 - The primary goal of the first principal component (PC1) is to capture the maximum possible variance (spread) of the data. By "stretching" the data along the axis where it varies the most, PCA ensures that the most significant patterns are highlighted first.
+- If you have 10 original attributes, you start with 10 principal components. However, you might find that the first 3 components explain 95% of the variance. By keeping only those 3, you reduce your 10D problem to a 3D problem while losing only a tiny fraction of the original information.
 
 ![image](https://github.com/diantyapitaloka/Principal-Analysis/assets/147487436/1729ddb9-bb3c-45ac-b526-5c6048b1a30a)
 
