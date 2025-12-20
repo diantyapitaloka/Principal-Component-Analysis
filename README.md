@@ -6,6 +6,7 @@
 
 
 ## 🍘🍜🍣 Principal Component Analysis Coding 🍣🍜🍘
+In a house price dataset, attributes like "number of rooms" and "square footage" are usually highly correlated. PCA creates new components that are orthogonal (at right angles) to each other. This means every principal component is mathematically independent, eliminating redundant information.
 Import the required libraries. Then we input the iris dataset and divide the data into train set and test set.
 
 ```
