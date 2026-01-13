@@ -6,6 +6,7 @@
 - PCA is extremely sensitive to the scale of your data. If one attribute is measured in "kilometers" and another in "millimeters," the one with the larger numbers will falsely appear to have higher variance. For PCA to work correctly, you must standardize your data (centering it so the mean is 0 and the standard deviation is 1) before running the algorithm.
 - Behind the scenes, PCA uses linear algebra. Eigenvectors determine the direction of the new axes (the principal components), while Eigenvalues determine the magnitude or the amount of variance explained by that specific component. A high eigenvalue means that principal component is carrying a lot of "weight."
 - By discarding the "tail end" principal components (those with very low variance), you aren't just saving space—you’re often cleaning your data. These minor components frequently represent random noise rather than actual patterns. Removing them can actually make machine learning models more accurate and less prone to overfitting.
+- One of the most practical uses for PCA is turning "invisible" high-dimensional data into something we can actually see. Since humans can't visualize 10 dimensions, we use PCA to collapse those 10 attributes into PC1 and PC2. We can then plot these on a 2D scatter plot to see if there are any natural clusters or outliers in the data.
 
 ![image](https://github.com/diantyapitaloka/Principal-Analysis/assets/147487436/1729ddb9-bb3c-45ac-b526-5c6048b1a30a)
 
