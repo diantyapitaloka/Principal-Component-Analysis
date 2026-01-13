@@ -4,6 +4,7 @@
 - If you have 10 original attributes, you start with 10 principal components. However, you might find that the first 3 components explain 95% of the variance. By keeping only those 3, you reduce your 10D problem to a 3D problem while losing only a tiny fraction of the original information.
 - Each principal component is perpendicular (orthogonal) to the ones before it. This means PC2 is completely uncorrelated with PC1. In a dataset where many attributes are redundant (like "square footage" and "number of rooms"), PCA strips away that overlap, ensuring each new component provides unique information.
 - PCA is extremely sensitive to the scale of your data. If one attribute is measured in "kilometers" and another in "millimeters," the one with the larger numbers will falsely appear to have higher variance. For PCA to work correctly, you must standardize your data (centering it so the mean is 0 and the standard deviation is 1) before running the algorithm.
+- Behind the scenes, PCA uses linear algebra. Eigenvectors determine the direction of the new axes (the principal components), while Eigenvalues determine the magnitude or the amount of variance explained by that specific component. A high eigenvalue means that principal component is carrying a lot of "weight."
 
 ![image](https://github.com/diantyapitaloka/Principal-Analysis/assets/147487436/1729ddb9-bb3c-45ac-b526-5c6048b1a30a)
 
