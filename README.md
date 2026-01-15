@@ -18,6 +18,7 @@
 - Train-Test Separation Logic: It is crucial to split your data into training and testing sets before applying PCA. This prevents "data leakage," ensuring the principal components are identified based only on information available during training.
 - Determining Component Count: While the Iris dataset has four features, you can choose to reduce it to two or three components for visualization purposes. This helps in identifying clusters and patterns that are difficult to see in four-dimensional space.
 - Preserving Information Variance: Each principal component carries a certain percentage of the total dataset variance. By checking the explained_variance_ratio_, you can see exactly how much information was retained after the dimensionality reduction.
+- Dimensionality Reduction vs. Feature Selection: Unlike feature selection, which picks a subset of original columns, PCA creates entirely new variables. These new components are linear combinations of the original attributes, designed to capture the maximum possible spread of data.
 
 ```
 from sklearn import datasets
