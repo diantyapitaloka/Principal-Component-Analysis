@@ -16,6 +16,7 @@
 - Import the required libraries. Then we input the iris dataset and divide the data into train set and test set.
 - Feature Scaling is Essential: PCA is highly sensitive to the scale of the original features because it maximizes variance. You must standardize your data so that features with larger numeric ranges don't unfairly dominate the principal components.
 - Train-Test Separation Logic: It is crucial to split your data into training and testing sets before applying PCA. This prevents "data leakage," ensuring the principal components are identified based only on information available during training.
+- Determining Component Count: While the Iris dataset has four features, you can choose to reduce it to two or three components for visualization purposes. This helps in identifying clusters and patterns that are difficult to see in four-dimensional space.
 
 ```
 from sklearn import datasets
