@@ -14,6 +14,7 @@
 - Running PCA on unscaled data corresponds to finding the eigenvectors of the Covariance Matrix. Running PCA on standardized data ($z$-score normalized) is equivalent to finding the eigenvectors of the Correlation Matrix. This distinction dictates whether features with inherently higher physical scales dominate the outcome.
 - PCA allows you to project your compressed, low-dimensional data back into its original high-dimensional space. While you won't recover the exact original values (due to dropping low-variance components), you get a smooth, noise-reduced approximation. This property makes PCA useful for image compression and signal denoising.
 - To decide how many components to keep, practitioners often plot the eigenvalues (or explained variance ratio) against the component numbers on a Scree Plot. The point where the plot sharply bends downward (the "elbow") reveals the cutoff point where adding more components yields diminishing returns in explained variance.
+- High correlation between input attributes (multicollinearity) can cause algorithms like Linear or Logistic Regression to become numerically unstable with unreliable coefficient estimates. Because all principal components are strictly orthogonal (uncorrelated), passing them into downstream models completely eliminates multicollinearity issues.
 
 ![image](https://github.com/diantyapitaloka/Principal-Analysis/assets/147487436/1729ddb9-bb3c-45ac-b526-5c6048b1a30a)
 
