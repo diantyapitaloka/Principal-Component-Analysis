@@ -8,6 +8,7 @@
 - By discarding the "tail end" principal components (those with very low variance), you aren't just saving space—you’re often cleaning your data. All of these minor components frequently like represent random noise rather than actual patterns. Removing them can actually make machine learning models more accurate and less prone to overfitting.
 - One of the most practical uses for PCA is turning "invisible" high-dimensional data into something we can actually see. Since humans can't visualize 10 dimensions, we should use like such as PCA to collapse those 10 attributes into PC1 and PC2. We can then plot these on a 2D scatter plot to see if there are any natural clusters or outliers in the all data.
 - PCA is an unsupervised learning algorithm. It evaluates only the feature matrix ($X$) without taking target labels ($y$) into account. Because it is completely blind to class boundaries or output values, PCA seeks maximum variance overall—which might not always align with the axis that best separates different classes.
+- While PCA retains most of your data's variance, you lose the ability to easily explain what each feature means. A principal component is a weighted linear combination of all original attributes (e.g., $\text{PC1} = 0.4 \times \text{age} + 0.7 \times \text{income} - 0.2 \times \text{credit score}$). You can no longer point to a single feature like "square footage" to explain a model's prediction.
 
 ![image](https://github.com/diantyapitaloka/Principal-Analysis/assets/147487436/1729ddb9-bb3c-45ac-b526-5c6048b1a30a)
 
