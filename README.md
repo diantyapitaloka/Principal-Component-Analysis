@@ -12,6 +12,7 @@
 - PCA strictly identifies linear relationships between variables. If your dataset contains complex, non-linear structures (like a spiral or a Swiss roll manifold), standard PCA will struggle to flatten it effectively without distorting the underlying patterns. (Non-linear alternatives like Kernel PCA or t-SNE/UMAP are used for such structures.)
 - In practice, modern machine learning libraries rarely compute PCA by calculating the full covariance matrix directly. Instead, they use Singular Value Decomposition (SVD) on the centered data matrix. SVD is computationally faster, requires less memory, and is far more numerically stable against floating-point errors.
 - Running PCA on unscaled data corresponds to finding the eigenvectors of the Covariance Matrix. Running PCA on standardized data ($z$-score normalized) is equivalent to finding the eigenvectors of the Correlation Matrix. This distinction dictates whether features with inherently higher physical scales dominate the outcome.
+- PCA allows you to project your compressed, low-dimensional data back into its original high-dimensional space. While you won't recover the exact original values (due to dropping low-variance components), you get a smooth, noise-reduced approximation. This property makes PCA useful for image compression and signal denoising.
 
 ![image](https://github.com/diantyapitaloka/Principal-Analysis/assets/147487436/1729ddb9-bb3c-45ac-b526-5c6048b1a30a)
 
