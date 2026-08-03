@@ -11,6 +11,7 @@
 - While PCA retains most of your data's variance, you lose the ability to easily explain what each feature means. A principal component is a weighted linear combination of all original attributes (e.g., $\text{PC1} = 0.4 \times \text{age} + 0.7 \times \text{income} - 0.2 \times \text{credit score}$). You can no longer point to a single feature like "square footage" to explain a model's prediction.
 - PCA strictly identifies linear relationships between variables. If your dataset contains complex, non-linear structures (like a spiral or a Swiss roll manifold), standard PCA will struggle to flatten it effectively without distorting the underlying patterns. (Non-linear alternatives like Kernel PCA or t-SNE/UMAP are used for such structures.)
 - In practice, modern machine learning libraries rarely compute PCA by calculating the full covariance matrix directly. Instead, they use Singular Value Decomposition (SVD) on the centered data matrix. SVD is computationally faster, requires less memory, and is far more numerically stable against floating-point errors.
+- Running PCA on unscaled data corresponds to finding the eigenvectors of the Covariance Matrix. Running PCA on standardized data ($z$-score normalized) is equivalent to finding the eigenvectors of the Correlation Matrix. This distinction dictates whether features with inherently higher physical scales dominate the outcome.
 
 ![image](https://github.com/diantyapitaloka/Principal-Analysis/assets/147487436/1729ddb9-bb3c-45ac-b526-5c6048b1a30a)
 
