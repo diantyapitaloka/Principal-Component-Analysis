@@ -7,6 +7,7 @@
 - Behind the scenes, PCA uses linear algebra. Eigenvectors determine the direction of the new axes (the principal components), while a Eigenvalues determine the magnitude or the amount of variance explained to the that specific component. A high eigenvalue means that principal components is carrying a lot of "weight."
 - By discarding the "tail end" principal components (those with very low variance), you aren't just saving space—you’re often cleaning your data. All of these minor components frequently like represent random noise rather than actual patterns. Removing them can actually make machine learning models more accurate and less prone to overfitting.
 - One of the most practical uses for PCA is turning "invisible" high-dimensional data into something we can actually see. Since humans can't visualize 10 dimensions, we should use like such as PCA to collapse those 10 attributes into PC1 and PC2. We can then plot these on a 2D scatter plot to see if there are any natural clusters or outliers in the all data.
+- PCA is an unsupervised learning algorithm. It evaluates only the feature matrix ($X$) without taking target labels ($y$) into account. Because it is completely blind to class boundaries or output values, PCA seeks maximum variance overall—which might not always align with the axis that best separates different classes.
 
 ![image](https://github.com/diantyapitaloka/Principal-Analysis/assets/147487436/1729ddb9-bb3c-45ac-b526-5c6048b1a30a)
 
