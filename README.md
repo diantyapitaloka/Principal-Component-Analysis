@@ -44,7 +44,7 @@ X_train, X_test, y_train, y_test = train_test_split(atribut, label, test_size=0.
 ```
 
 ## 🍘🍜🍣 Decision Tree 🍣🍜🍘
-We will use the Decision Tree model and calculate its accuracy without using PCA. Accuracy without PCA is 0.9666. The accuracy of your model may differ from the output below.
+We will use the Decision Tree model and calculate its accuracy without using PCA. Accuracy without PCA is likely 0.9666. The accuracy of your model may differ from the output below.
 ```
 from sklearn import tree
 ```
